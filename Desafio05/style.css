@@ -1,0 +1,23 @@
+/*body{*/
+    /*background-image: linear-gradient(180deg,#F03583,#C54C7F,#9B5672);*/
+    body {
+        background: linear-gradient(to top, #829DB3, #4D6E8A, #25445E, #0C2234, #031D33);
+        /*background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;*/
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    a{
+        color: black;
+    }
+   
