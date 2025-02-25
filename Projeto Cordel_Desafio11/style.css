@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Calligraffitti&family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Calligraffitti&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 body{
@@ -9,6 +11,7 @@ header{
     padding: 10px;
     text-align: center;
     font-style: normal;
+    font-variant: small-caps;
     font-weight: bold;
     font-family: "Passion One", cursive;
     font-size: 60px;
@@ -33,18 +36,24 @@ a:hover{
 }
 #q2{
     background-image: url('imagens/background001.jpg');
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+}
+div.texto > p{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 600px;
+    margin-left: 30px;
+    box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.384);
 }
 #q3{
     background-color: white;
 }
 #q4{
     background-image: url('imagens/background002.jpg');
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -59,7 +68,7 @@ a:hover{
 section{
     font-size: 50px;
     line-height: 6rem;
-    padding-right: 10px;
+    padding-left: 30px;
     font-family: "Sriracha", serif;
     text-align: justify;
 }
