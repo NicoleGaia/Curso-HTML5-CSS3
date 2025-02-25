@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+    <style>
+        body{
+            /*background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;*/
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        div.quadrado{
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            /*display: inline-block; /*coloca as div's uma do lado da outra*/
+            background-color: gray;
+            margin: auto;
+        }
+        div#q1{
+            background-image: url('imagens/pattern002.png');
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, pink, purple);
+        }
+        div#q3{
+            background-image: url('imagens/pattern003.png')
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
