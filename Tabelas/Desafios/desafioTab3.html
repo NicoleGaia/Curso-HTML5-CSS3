@@ -27,17 +27,29 @@
         }
         .num{
             text-align: center;
+            font-weight: bold;
+        }
+        .col6{
+            color: gray;
         }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col class="col6">
+        </colgroup>
         <thead>
             <tr>
                 <th rowspan="2">Área</th>
                 <th rowspan="2">Disciplina</th>
                 <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" colspan="2">Média</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -48,62 +60,116 @@
             <tr>
                 <th rowspan="4">Exatas</th>
                 <td>Matemática</td>
-                <td class="num" id="txtn1">5.0</td>
-                <td class="num" id="txtn2">8.0</td>
-                <td class="num" id="res">0.0</td>
+                <td><input type="number" name="Mn1" id="Mn1" placeholder="Digite um número"></td>
+                <td><input type="number" name="Mn2" id="Mn2" placeholder="Digite um número"></td>
+                <td class="num" colspan="2"><div id="res">0.0</div> <input type="button" value="Calcular" onclick="calcularM1()"></td>
+                <!--<td class="button"><input type="button" value="Calcular" onclick="calcularM1()"></td>-->
             </tr>
             <tr>
                 <td>Física</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
+                <td><input type="number" name="Fn1" id="Fn1" placeholder="Digite um número"></td>
+                <td><input type="number" name="Fn2" id="Fn2" placeholder="Digite um número"></td>
+                <td class="num" colspan="2"><div id="res1">0.0</div> <input type="button" value="Calcular" onclick="calcularM2()"></td>
             </tr>
             <tr>
                 <td>Química</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
+                <td><input type="number" name="Qn1" id="Qn1" placeholder="Digite um número"></td>
+                <td><input type="number" name="Qn2" id="Qn2" placeholder="Digite um número"></td>
+                <td class="num" colspan="2"><div id="res2">0.0</div> <input class="botão" type="button" value="Calcular" onclick="calcularM3()"></td>
             </tr>
             <tr>
                 <td>Biologia</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
+                <td><input type="number" name="Bn1" id="Bn1" placeholder="Digite um número"></td>
+                <td><input type="number" name="Bn2" id="Bn2" placeholder="Digite um número"></td>
+                <td class="num" colspan="2"><div id="res3">0.0</div> <input type="button" value="Calcular" onclick="calcularM4()"></td>
             </tr>
             <tr class="media">
                 <th colspan="4">Média de Exatas</th>
-                <td class="num">0.0</td>
+                <td class="num" colspan="2"><div id="res4">0.0</div> <input type="button" value="Calcular" onclick="calcularMT1()"></td>
             </tr>
             <tr>
                 <th rowspan="2">Humanas</th>
                 <td>História</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
+                <td><input type="number" name="Hn1" id="Hn1" placeholder="Digite um número"></td>
+                <td><input type="number" name="Hn2" id="Hn2" placeholder="Digite um número"></td>
+                <td class="num" colspan="2"><div id="res5">0.0</div> <input type="button" value="Calcular" onclick="calcularM5()"></td>
             </tr>
             <tr>
                 <td>Geografia</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
+                <td><input type="number" name="Gn1" id="Gn1" placeholder="Digite um número"></td>
+                <td><input type="number" name="Gn2" id="Gn2" placeholder="Digite um número"></td>
+                <td class="num" colspan="2"><div id="res6">0.0</div> <input type="button" value="Calcular" onclick="calcularM6()"></td>
             </tr>
             <tr class="media">
                 <th colspan="4">Média de Humanas</th>
-                <td class="num">0.0</td>
+                <td class="num"><div id="res7">0.0</div> <input type="button" value="Calcular" onclick="calcularMT2()"></td>
             </tr>
         </tbody>
     </table>
-    <input type="button" value="Calcular" onclick="calcular()">
+    <!--<input type="button" value="Calcular" onclick="calcularM1()" onclick="calcularM2()">-->
     <script>
-        function calcular(){
-            var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.getElementById('txtn2')
-            var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var m = (n1 + n2) / 2
-            res.innerHTML = `${m}`
-        }
+            function calcularM1(){
+                var Mn1 = window.document.getElementById('Mn1')
+                var Mn2 = window.document.getElementById('Mn2')
+                var res = window.document.getElementById('res')
+                var n1 = Number(Mn1.value)
+                var n2 = Number(Mn2.value)
+                var m1 = (n1 + n2) / 2
+                res.innerHTML = `${m1}`
+            }
+            function calcularM2(){
+                var Fn1 = window.document.getElementById('Fn1')
+                var Fn2 = window.document.getElementById('Fn2')
+                var res1 = window.document.getElementById('res1')
+                var n1 = Number(Fn1.value)
+                var n2 = Number(Fn2.value)
+                var m2 = (n1 + n2) / 2
+                res1.innerHTML = `${m2}`
+            }
+            function calcularM3(){
+                var Qn1 = window.document.getElementById('Qn1')
+                var Qn2 = window.document.getElementById('Qn2')
+                var res2 = window.document.getElementById('res2')
+                var n1 = Number(Qn1.value)
+                var n2 = Number(Qn2.value)
+                var m3 = (n1 + n2) / 2
+                res2.innerHTML = `${m3}`
+            }
+            function calcularM4(){
+                var Bn1 = window.document.getElementById('Bn1')
+                var Bn2 = window.document.getElementById('Bn2')
+                var res3 = window.document.getElementById('res3')
+                var n1 = Number(Bn1.value)
+                var n2 = Number(Bn2.value)
+                var m4 = (n1 + n2) / 2
+                res3.innerHTML = `${m4}`
+            }
+            /*function calcularMT(){
+                var m1 = (n1 + n2) / 2
+                var m2 = (n1 + n2) / 2
+                var m3 = (n1 + n2) / 2
+                var m4 = (n1 + n2) / 2
+                var M = (m1 + m2 + m3 + m4) / 4
+                res4.innerHTML = `${M}`
+            }*/
+            function calcularM5(){
+                var Hn1 = window.document.getElementById('Hn1')
+                var Hn2 = window.document.getElementById('Hn2')
+                var res5 = window.document.getElementById('res5')
+                var n1 = Number(Hn1.value)
+                var n2 = Number(Hn2.value)
+                var m5 = (n1 + n2) / 2
+                res5.innerHTML = `${m5}`
+            }
+            function calcularM6(){
+                var Gn1 = window.document.getElementById('Gn1')
+                var Gn2 = window.document.getElementById('Gn2')
+                var res6 = window.document.getElementById('res6')
+                var n1 = Number(Gn1.value)
+                var n2 = Number(Gn2.value)
+                var m6 = (n1 + n2) / 2
+                res6.innerHTML = `${m6}`
+            }
     </script>
 </body>
 </html>
