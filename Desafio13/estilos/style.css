@@ -44,3 +44,11 @@ iframe{
     height: 500px;
     width: 40vw;
 }
+iframe#tela{
+    position: relative;
+    top: 117px;
+    left: 75px;
+    width: 268px;
+    height: 471px;
+    margin-left: -9px;
+}
