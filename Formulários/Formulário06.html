@@ -27,11 +27,35 @@
 
         <p>
             <label for="">Número</label>
-            <input type="range" name="num" id="num" min="0" max="10" value="5">
+            <input type="range" name="num" id="num" min="0" max="10" value="5" oninput="nivel.innerHTML = Number(num.value)">
+            <output id="nivel">5</output>
         </p>
         <p>
-            <input type="submit">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>-----------------------------------------------------</p>
+
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2025" oninput="Calcular()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
    </form> 
 </body>
+<script>
+    function Calcular(){
+        var atual = new Date().getFullYear()
+        idade.innerHTML = atual - Number(ano.value)
+
+    }
+</script>
 </html>
