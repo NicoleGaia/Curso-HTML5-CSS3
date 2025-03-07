@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Querry</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-querry.css" media="screen and (orientation: landscape)">
 </head>
+<script>
+    function clickMenu(){
+        itens.style.display = 'block'
+    }
+</script>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <i id="icon" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-        <menu id="menu">
+        <span id="icon" onclick="clickMenu()" class="material-symbols-outlined">menu</span>
+        <menu id="itens">
             <ul>
                 <li>Opção 1</li>
                 <li>Opção 2</li>
@@ -35,10 +40,6 @@
                 </p>
         </article>
     </main>
-    <script>
-        function clickMenu(){
-           menu.style.display = 'block'
-        }
-    </script>
+    
 </body>
 </html>

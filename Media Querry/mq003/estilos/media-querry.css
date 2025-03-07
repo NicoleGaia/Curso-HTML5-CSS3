@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 /*Deitado - paisagem*/
-
+#icon{
+    display: none;
+}
 menu li{
     display: inline-block;
     background-color: rgb(94, 93, 93);
