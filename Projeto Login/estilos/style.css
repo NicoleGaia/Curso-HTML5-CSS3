@@ -6,54 +6,37 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
     line-height: 1.5rem;
 }
 body{
     width: 100vw;
     background-color: rgb(94, 47, 116);
 }
-img{
-    width: 300px;
-    height: 230px;
-    margin-top: 20px;
-    transform: translate(32%, 2%);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
-#login{
-    margin-top: 0px;
-    padding: 10px;
-    text-align: center;
+section#login{
     background-color: white;
-    width: 280px;
-    margin: auto;
-    height: 300px;
+    position: absolute;
     top: 50%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
 }
-h1{
-    padding: 5px;
+section#login > div#img{
+    display: block;
+    background: rgb(94, 47, 116) url('../imagens/pexels-dinnow-86001860-9444476.jpg') no-repeat left top;
+    height: 200px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
-p{
-    margin-top: 8px;
-    font-size: 10pt;
-}
-.icon{
-    background-color: rgb(94, 47, 116);
-    border-radius: 10px;
-    height: 43px;
-    padding-top: 3px;
-}
-.img{
-    
-}
-input{
-    height: 40px;
-    width: 200px;
-    margin-left: 47px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(155, 222, 243);
-    text-align: center;
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
 }
