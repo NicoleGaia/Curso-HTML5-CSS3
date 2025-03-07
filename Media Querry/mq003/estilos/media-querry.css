@@ -4,6 +4,9 @@
 #icon{
     display: none;
 }
+main{
+    width: 750px;
+}
 menu li{
     display: inline-block;
     background-color: rgb(94, 93, 93);
