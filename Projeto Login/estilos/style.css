@@ -39,4 +39,6 @@ section#login > div#img{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+    text-align: center;
 }
+
