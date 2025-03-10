@@ -28,11 +28,11 @@ nav{
     justify-content: flex-end;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
 }
 a{
     color: white;
     text-decoration: none;
+    text-align: center;
     background-color: black;
     padding: 5px;
     margin: 5px;
@@ -49,4 +49,7 @@ main{
     padding: 10px;
     border-radius: 10px;
 
+}
+#icon{
+    display: block;
 }

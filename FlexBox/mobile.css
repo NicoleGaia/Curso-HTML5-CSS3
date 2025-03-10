@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+header{
+    flex-flow: column wrap;
+}
+header > h1{
+    flex-basis: 50px;
+}
+header > nav#menu{
+    flex-flow:column nowrap;
+}
+header > nav >  a{
+    width: 200px;
+}
+/*header{
+    flex-flow: column nowrap;
+}
+header > h1{
+    flex-basis: 50px;
+}
+nav{
+    flex-flow: column nowrap;
+}
+a{
+    width: 90vw;
+}*/
+#icon{
+    display: block;
+}
+#icon:hover{
+    cursor: pointer;
+}
